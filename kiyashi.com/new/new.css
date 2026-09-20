@@ -1,0 +1,88 @@
+.site-header {
+  min-height: 85px;
+  padding: 15px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: linear-gradient(90deg, #111827, #29354a);
+}
+
+.site-logo {
+  color: #ff9d00;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-logo span {
+  color: white;
+}
+
+.main-menu {
+  display: flex;
+  gap: 22px;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-menu a:hover {
+  color: #ff9d00;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-right input {
+  width: 160px;
+  padding: 9px;
+  border: none;
+  border-radius: 5px;
+}
+
+.header-right button {
+  padding: 9px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+}
+.order-page {
+  background-color: #9ca3af;
+}
+
+.order-box {
+  background-color: #e5e7eb;
+  color: black;
+}
+
+.order-box h1,
+.order-box h2,
+.order-box p,
+.order-box label {
+  color: black;
+}
+
+.order-book {
+  background-color: #fed7aa;
+  color: black;
+}
+
+.order-box input,
+.order-box textarea {
+  background-color: white;
+  color: black;
+  border: 1px solid #555;
+}

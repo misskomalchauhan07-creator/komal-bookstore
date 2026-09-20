@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>komal.com</title>
+    <link rel="stylesheet" href="kiyu.css">
+
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script>
+  const buttons = document.querySelectorAll(".add-cart");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      localStorage.setItem("bookName", button.dataset.book);
+      localStorage.setItem("bookPrice", button.dataset.price);
+
+      window.location.href = "order.html";
+    });
+  });
+</script>
+<body>
+  <header class="site-header">
+
+  <a class="site-logo" href="kiyu.html">
+    komal<span>.in</span>
+  </a>
+
+  <nav class="main-menu">
+    <a href="kiyu.html">Home</a>
+    <a href="#">Books</a>
+    <a href="#">Categories</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="header-right">
+    <input type="text" placeholder="Search books...">
+    <button>🔍</button>
+    <a href="#">🛒 Cart</a>
+  </div>
+
+</header>
+    <div id="content">
+
+  <div class="book-card">
+    <img src="yrr papa.jpg" alt="Book 1">
+    <h3>
+
+"Yaar Papa" by Divya Prakash Dubey is a novel that explores the complexities of familial relationships, particularly focusing on the bond between a father and his estranged daughter</h3>
+   <p>₹99</p>
+    <div class="book-buttons">
+      
+<button type="button"
+style="background-color: #eec12e; color: white; border: none; padding: 12px 16px; cursor: pointer;"
+onclick="alert('Book Yaar Papa cart me add ho gayi!')">
+  Add to Cart
+</button>
+
+  
+  <button class="buy-btn" type="button"
+  onclick="localStorage.setItem('yaar papa', 'Yaar Papa'); localStorage.setItem('bookPrice', '99'); window.location.href='order.html';">
+    Buy Now
+  </button>
+
+</div>
+  </div>
+
+  <div class="book-card">
+    <img src="Deewar Mein Ek Khidki Rehti Thi Hindi Novel Paperback.jpg" alt="Book 2">
+    <h3>The novel has been discussed in the context of modern Hindi literature.Critics have  distinctive writing style,including his use of simple language,imagination and poetic expression.</h3>
+   <p>₹99</p>
+    <div class="book-buttons">
+
+  <button class="cart-btn" type="button"
+  onclick="alert('Book Deewar Mein Ek Khidki Rehti Thi Hindi Novel cart me add ho gayi!')">
+    Add to Cart
+  </button>
+
+  <button class="buy-btn" type="button"
+  onclick="localStorage.setItem('Deewar Mein Ek Khidki Rehti Thi Hindi Novel','Book 5'); localStorage.setItem('bookPrice','400'); window.location.href='order.html';">
+    Buy Now
+  </button>
+
+</div>
+  </div>
+
+  <div class="book-card">
+    <img src="karma.jpg" alt="Book 3">
+    <h3>Karma: ' about Karma -Sadhguru shows us it's not a punishment for bad behavior, but a vehicle for transformation and empowerment. This book will put you back in charge of your own life.'
+
+</h3>
+<p>₹99</p>
+   <div class="book-buttons">
+
+  <button class="cart-btn" type="button"
+  onclick="alert('Book karma cart me add ho gayi!')">
+    Add to Cart
+  </button>
+
+  <button class="buy-btn" type="button"
+  onclick="localStorage.setItem('karma','Book 5'); localStorage.setItem('bookPrice','99'); window.location.href='order.html';">
+    Buy Now
+  </button>
+
+</div>
+  </div>
+
+  <div class="book-card">
+    <img src="death.jpg" alt="Book 4">
+    <h3>Death" by Sadhguru explores death as a natural, transformative part of life, offering spiritual insights and practical guidance to live fully. Death; An Inside Story: A book for all those who shall die</h3>
+    <p>₹99</p>
+   <div class="book-buttons">
+
+  <button class="cart-btn" type="button"
+  onclick="alert('Book death cart me add ho gayi!')">
+    Add to Cart
+  </button>
+
+  <button class="buy-btn" type="button"
+  onclick="localStorage.setItem('bookName','Book 5'); localStorage.setItem('bookPrice','99'); window.location.href='order.html';">
+    Buy Now
+  </button>
+
+</div>
+  </div>
+
+  
+</div>
+          <div id="content">
+  <div class="book-card">
+    <img src="musafir_cafe.jpg" alt="Book cover">
+    <h3>"Musafir Cafe" is a contemporary Hindi fiction novel exploring love, life choices, and the journey of self-discovery through the lives of Sudha and Chandar.</h3>
+    <p>₹99</p>
+    <div class="book-buttons">
+<div class="book-buttons">
+
+  <button class="cart-btn" type="button"
+  onclick="alert('Book musafir cafe cart me add ho gayi!')">
+    Add to Cart
+  </button>
+
+  <button class="buy-btn" type="button"
+  onclick="localStorage.setItem('bookName','Musafir Cafe'); localStorage.setItem('bookPrice','99'); window.location.href='order.html';">
+    Buy Now
+  </button>
+
+</div>
+ <div class="book-buttons">
+<div class="book-buttons">
+
+
+</div>
+</div>
+
+</div>
+  </div>
+
+  <div class="book-card">
+    <img src="oct.juntion.webp" alt="Book cover">
+    <h3>October Junction" by Divya Prakash Dubey is an emotional story about Chitra and Sudeep,whose lives intersect once a year,exploring love complexities of life.</h3>
+    <p>₹99</p>
+   <div class="book-buttons">
+
+  <button class="cart-btn" type="button"
+  onclick="alert('October Junction cart me add ho gayi!')">
+    Add to Cart
+  </button>
+
+  <button class="buy-btn" type="button"
+  onclick="localStorage.setItem('bookName','October Junction'); localStorage.setItem('bookPrice','99'); window.location.href='order.html';">
+    Buy Now
+  </button>
+
+</div>
+</div>
+<div class="book-card">
+  <img src="can-we-be-strangers-again.webp" alt="Book 3">
+  <h3>Can We Be Strangers Again?" by Shrijeet Shandilya follows the lives of three college friends whose bond is tested when two of them cross the line from friendship into romance</h3>
+  
+  <p>₹99</p>
+  <div class="book-buttons">
+
+  <button class="cart-btn" type="button"
+  onclick="alert('Can We Be Strangers Again cart me add ho gayi!')">
+    Add to Cart
+  </button>
+
+  <button class="buy-btn" type="button"
+  onclick="localStorage.setItem('bookName','Can We Be Strangers Again?'); localStorage.setItem('bookPrice','99'); window.location.href='order.html';">
+    Buy Now
+  </button>
+
+</div>
+</div>
+
+<div class="book-card">
+  <img src="shiv.jpg" alt="Book 4">
+  <h3>THE SHIV LINK OF JESUS What if everything you knew about religion was only half the truth?
+A buried secret - powerful enough to rewrite belief itself.
+</h3>
+  
+  <p>₹99</p>
+  <<div class="book-buttons">
+
+  <button class="cart-btn" type="button"
+  onclick="alert('The Shiv Link of Jesus cart me add ho gayi!')">
+    Add to Cart
+  </button>
+
+  <button class="buy-btn" type="button"
+  onclick="localStorage.setItem('bookName','The Shiv Link of Jesus'); localStorage.setItem('bookPrice','99'); window.location.href='order.html';">
+    Buy Now
+  </button>
+
+</div>
+</div>
+    </div>
+    <footer class="site-footer">
+
+  <div class="footer-top">
+
+    <div class="footer-brand">
+      <h2>komal<span>.in</span></h2>
+      <p>Discover books that inspire, educate, and stay with you forever.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Customer Help</h3>
+      <a href="#">My Account</a>
+      <a href="#">My Cart</a>
+      <a href="#">Returns</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+
+      <a class="social instagram" href="https://www.instagram.com/" target="_blank">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+
+      <a class="social facebook" href="https://www.facebook.com/" target="_blank">
+        <i class="fa-brands fa-facebook"></i> Facebook
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 komal.in. All rights reserved.</p>
+    <p>Made with ❤️ for book lovers</p>
+  </div>
+
+</footer>
+</body>
+</html>

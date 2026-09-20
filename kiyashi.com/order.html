@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Your Order</title>
+  <link rel="stylesheet" href="kiyu.css">
+</head>
+<script>
+  const buttons = document.querySelectorAll(".add-cart");
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      localStorage.setItem("bookName", button.dataset.book);
+      localStorage.setItem("bookPrice", button.dataset.price);
+      window.location.href = "order.html";
+    });
+  });
+</script>
+<body>
+<body class="order-page"></body>
+  <div class="order-box">
+    <h1>Checkout</h1>
+
+    <div class="order-book">
+      <h2 id="book-name"></h2>
+      <p id="book-price"></p>
+    </div>
+
+    <form id="order-form">
+      <label>Your Name</label>
+      <input type="text" id="customer-name" required>
+
+      <label>Mobile Number</label>
+      <input type="tel" required>
+
+      <label>Delivery Address</label>
+      <textarea required></textarea>
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <div id="success-message"></div>
+  </div>
+
+  <script>
+    const bookName = localStorage.getItem("bookName");
+    const bookPrice = localStorage.getItem("bookPrice");
+
+    document.getElementById("book-name").innerText = bookName;
+    document.getElementById("book-price").innerText = "Price: ₹" + bookPrice;
+
+    document.getElementById("order-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const customerName = document.getElementById("customer-name").value;
+
+      localStorage.setItem("customerName", customerName);
+
+      document.getElementById("success-message").innerHTML =
+  "<h1 style='color: green; font-size: 42px; text-align: center;'>✅ ORDER CONFIRMED!</h1>" +
+  "<p style='color: black; text-align: center; font-size: 20px;'>Thank you, " + customerName + ".</p>" +
+  "<p style='color: black; text-align: center;'>Your order has been received successfully.</p>";
+
+document.getElementById("order-form").style.display = "none";
+});
+</script>
+
+</body>
+</html>
